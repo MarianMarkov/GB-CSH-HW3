@@ -1,0 +1,16 @@
+﻿int Ax, Ay, Az, Bx, By, Bz;
+double dist;
+Console.Write("Ax = ");
+Ax = int.Parse(Console.ReadLine()!);
+Console.Write("Ay = ");
+Ay = int.Parse(Console.ReadLine()!);
+Console.Write("Az = ");
+Az = int.Parse(Console.ReadLine()!);
+Console.Write("Bx = ");
+Bx = int.Parse(Console.ReadLine()!);
+Console.Write("By = ");
+By = int.Parse(Console.ReadLine()!);
+Console.Write("Bz = ");
+Bz = int.Parse(Console.ReadLine()!);
+dist = Math.Sqrt((Bx - Ax) * (Bx - Ax) + (By - Ay) * (By - Ay) + (Bz - Az) * (Bz - Az));
+Console.WriteLine("A(" + Ax + ","+ Ay + ","+ Az + "); B(" + Bx + ","+ By + ","+ Bz + ") -> " + dist.ToString("F" + 2));
